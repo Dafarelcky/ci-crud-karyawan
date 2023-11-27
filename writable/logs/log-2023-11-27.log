@@ -1,0 +1,632 @@
+CRITICAL - 2023-11-27 14:22:48 --> Class "App\Models\UserModel" not found
+in APPPATH\Controllers\Login.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 14:22:52 --> Class "App\Models\UserModel" not found
+in APPPATH\Controllers\Login.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 14:23:08 --> Class "App\Models\UserModel" not found
+in APPPATH\Controllers\Login.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 14:23:47 --> Class "App\Models\UserModel" not found
+in APPPATH\Controllers\Login.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 14:27:35 --> Class "App\Models\UserModel" not found
+in APPPATH\Controllers\Login.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->auth()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+ERROR - 2023-11-27 14:34:25 --> Error connecting to the database: mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ci4_quiz2\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\ci4_quiz2\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', '', '', '', 3306, '', 0)
+#1 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci4_quiz2\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4_quiz2\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4_quiz2\app\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(942): App\Controllers\Login->auth()
+#8 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4_quiz2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4_quiz2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\ci4_quiz2\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ci4_quiz2\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci4_quiz2\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ci4_quiz2\app\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(942): App\Controllers\Login->auth()
+#7 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4_quiz2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci4_quiz2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-11-27 14:34:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user ''@'localhost' (using password: NO)
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `user_email` = :user_email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+ERROR - 2023-11-27 15:08:24 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'quiz2' in C:\xampp\htdocs\ci4_quiz2\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\ci4_quiz2\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'quiz2', 3306, '', 0)
+#1 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci4_quiz2\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4_quiz2\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4_quiz2\app\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(942): App\Controllers\Login->auth()
+#8 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4_quiz2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4_quiz2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'quiz2' in C:\xampp\htdocs\ci4_quiz2\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ci4_quiz2\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci4_quiz2\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ci4_quiz2\app\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(942): App\Controllers\Login->auth()
+#7 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4_quiz2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci4_quiz2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-11-27 15:08:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'quiz2'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `user_email` = :user_email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 15:09:09 --> Undefined variable $data
+in APPPATH\Controllers\Login.php on line 21.
+ 1 APPPATH\Controllers\Login.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Controllers\\Login.php', 21)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->auth()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+ERROR - 2023-11-27 15:09:25 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'quiz2' in C:\xampp\htdocs\ci4_quiz2\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp\htdocs\ci4_quiz2\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'quiz2', 3306, '', 0)
+#1 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci4_quiz2\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4_quiz2\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4_quiz2\app\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(942): App\Controllers\Login->auth()
+#8 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4_quiz2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4_quiz2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'quiz2' in C:\xampp\htdocs\ci4_quiz2\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ci4_quiz2\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ci4_quiz2\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\xampp\htdocs\ci4_quiz2\app\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+#6 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(942): App\Controllers\Login->auth()
+#7 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ci4_quiz2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\ci4_quiz2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2023-11-27 15:09:25 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'quiz2'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `user_email` = :user_email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->auth()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+ERROR - 2023-11-27 15:16:36 --> mysqli_sql_exception: Table 'quiz2.users' doesn't exist in C:\xampp\htdocs\ci4_quiz2\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\ci4_quiz2\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ci4_quiz2\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ci4_quiz2\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ci4_quiz2\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\xampp\htdocs\ci4_quiz2\app\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+#7 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(942): App\Controllers\Login->auth()
+#8 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#9 C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ci4_quiz2\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\ci4_quiz2\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-11-27 15:16:36 --> Table 'quiz2.users' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `user_email` = :user_email:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Controllers\Login.php(20): CodeIgniter\BaseModel->first()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Login->auth()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 17:56:03 --> Too few arguments to function App\Controllers\Dashboard::detail(), 0 passed in C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\Dashboard.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->detail()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 17:58:06 --> Too few arguments to function App\Controllers\Dashboard::detail(), 0 passed in C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\Dashboard.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->detail()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 17:58:10 --> Too few arguments to function App\Controllers\Dashboard::detail(), 0 passed in C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\Dashboard.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->detail()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 17:58:56 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\ci4_quiz2\app\Models\MoviesModel.php on line 25
+in SYSTEMPATH\Database\BaseBuilder.php on line 983.
+ 1 APPPATH\Models\MoviesModel.php(25): CodeIgniter\Database\BaseBuilder->like('movies.title', null)
+ 2 APPPATH\Controllers\Dashboard.php(31): App\Models\MoviesModel->getMovies1(null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->detail('ikhwan')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 17:58:59 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\ci4_quiz2\app\Models\MoviesModel.php on line 25
+in SYSTEMPATH\Database\BaseBuilder.php on line 983.
+ 1 APPPATH\Models\MoviesModel.php(25): CodeIgniter\Database\BaseBuilder->like('movies.title', null)
+ 2 APPPATH\Controllers\Dashboard.php(31): App\Models\MoviesModel->getMovies1(null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->detail('ikhwan')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 17:59:13 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\ci4_quiz2\app\Models\MoviesModel.php on line 25
+in SYSTEMPATH\Database\BaseBuilder.php on line 983.
+ 1 APPPATH\Models\MoviesModel.php(25): CodeIgniter\Database\BaseBuilder->like('movies.title', null)
+ 2 APPPATH\Controllers\Dashboard.php(31): App\Models\MoviesModel->getMovies1(null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->detail('ikhwan')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 17:59:18 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\ci4_quiz2\app\Models\MoviesModel.php on line 25
+in SYSTEMPATH\Database\BaseBuilder.php on line 983.
+ 1 APPPATH\Models\MoviesModel.php(25): CodeIgniter\Database\BaseBuilder->like('movies.title', null)
+ 2 APPPATH\Controllers\Dashboard.php(31): App\Models\MoviesModel->getMovies1(null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->detail('ikhwan')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 18:02:24 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\ci4_quiz2\app\Models\MoviesModel.php on line 25
+in SYSTEMPATH\Database\BaseBuilder.php on line 983.
+ 1 APPPATH\Models\MoviesModel.php(25): CodeIgniter\Database\BaseBuilder->like('movies.title', null)
+ 2 APPPATH\Controllers\Dashboard.php(31): App\Models\MoviesModel->getMovies1(null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->detail('ikhwan')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 18:02:35 --> CodeIgniter\Database\BaseBuilder::like(): Argument #2 ($match) must be of type string, null given, called in C:\xampp\htdocs\ci4_quiz2\app\Models\MoviesModel.php on line 25
+in SYSTEMPATH\Database\BaseBuilder.php on line 983.
+ 1 APPPATH\Models\MoviesModel.php(25): CodeIgniter\Database\BaseBuilder->like('movies.title', null)
+ 2 APPPATH\Controllers\Dashboard.php(31): App\Models\MoviesModel->getMovies1(null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->detail('ikhwan')
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 19:24:20 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\dashboard\bayar.php on line 80.
+ 1 APPPATH\Views\dashboard\bayar.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\bayar.php', 80)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\bayar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/bayar', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(42): view('dashboard/bayar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->bayar('40000')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 19:25:37 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\dashboard\bayar.php on line 80.
+ 1 APPPATH\Views\dashboard\bayar.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\bayar.php', 80)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\bayar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/bayar', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(42): view('dashboard/bayar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->bayar('40000')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 19:25:46 --> foreach() argument must be of type array|object, string given
+in APPPATH\Views\dashboard\bayar.php on line 80.
+ 1 APPPATH\Views\dashboard\bayar.php(80): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, string given', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\bayar.php', 80)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\bayar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/bayar', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(42): view('dashboard/bayar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->bayar('40000')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 21:05:00 --> Too few arguments to function App\Controllers\Dashboard::detail(), 0 passed in C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\Dashboard.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->detail()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 21:23:13 --> Invalid file: "admin/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/edit', [], true)
+ 3 APPPATH\Controllers\Admin.php(57): view('admin/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->edit('6')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 21:24:38 --> Invalid file: "admin/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/edit', [], true)
+ 3 APPPATH\Controllers\Admin.php(57): view('admin/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->edit('6')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 21:24:48 --> Invalid file: "admin/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/edit', [], true)
+ 3 APPPATH\Controllers\Admin.php(57): view('admin/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->edit('6')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 21:27:24 --> Invalid file: "admin/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/edit', [], true)
+ 3 APPPATH\Controllers\Admin.php(57): view('admin/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->edit('6')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 21:27:35 --> Invalid file: "admin/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/edit', [], true)
+ 3 APPPATH\Controllers\Admin.php(57): view('admin/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Admin->edit('2')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 21:50:42 --> Undefined variable $row
+in APPPATH\Views\dashboard\bayar.php on line 282.
+ 1 APPPATH\Views\dashboard\bayar.php(282): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\bayar.php', 282)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\bayar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/bayar', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(42): view('dashboard/bayar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->bayar('40000')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 21:50:46 --> Undefined variable $row
+in APPPATH\Views\dashboard\bayar.php on line 282.
+ 1 APPPATH\Views\dashboard\bayar.php(282): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\bayar.php', 282)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\bayar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/bayar', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(42): view('dashboard/bayar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->bayar('40000')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 21:51:22 --> Undefined variable $row
+in APPPATH\Views\dashboard\bayar.php on line 282.
+ 1 APPPATH\Views\dashboard\bayar.php(282): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\bayar.php', 282)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\bayar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/bayar', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(42): view('dashboard/bayar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->bayar('40000')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 21:52:11 --> Undefined variable $row
+in APPPATH\Views\dashboard\bayar.php on line 282.
+ 1 APPPATH\Views\dashboard\bayar.php(282): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\bayar.php', 282)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\bayar.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/bayar', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(42): view('dashboard/bayar', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->bayar('40000')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 21:59:13 --> Undefined variable $row
+in APPPATH\Views\dashboard\detail.php on line 48.
+ 1 APPPATH\Views\dashboard\detail.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\detail.php', 48)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/detail', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(33): view('dashboard/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->detail('globals.css')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 21:59:13 --> Undefined variable $row
+in APPPATH\Views\dashboard\detail.php on line 48.
+ 1 APPPATH\Views\dashboard\detail.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\detail.php', 48)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/detail', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(33): view('dashboard/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->detail('styleguide.css')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 21:59:13 --> Undefined variable $row
+in APPPATH\Views\dashboard\detail.php on line 48.
+ 1 APPPATH\Views\dashboard\detail.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\detail.php', 48)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/detail', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(33): view('dashboard/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->detail('css', 'style.css')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:00:55 --> Undefined variable $row
+in APPPATH\Views\dashboard\detail.php on line 307.
+ 1 APPPATH\Views\dashboard\detail.php(307): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\detail.php', 307)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/detail', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(33): view('dashboard/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->detail('globals.css')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:00:55 --> Undefined variable $row
+in APPPATH\Views\dashboard\detail.php on line 307.
+ 1 APPPATH\Views\dashboard\detail.php(307): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\detail.php', 307)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/detail', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(33): view('dashboard/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->detail('styleguide.css')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:00:55 --> Undefined variable $row
+in APPPATH\Views\dashboard\detail.php on line 307.
+ 1 APPPATH\Views\dashboard\detail.php(307): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\detail.php', 307)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/detail', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(33): view('dashboard/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->detail('css', 'style.css')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:00:55 --> Undefined variable $row
+in APPPATH\Views\dashboard\detail.php on line 307.
+ 1 APPPATH\Views\dashboard\detail.php(307): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\detail.php', 307)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\ci4_quiz2\\app\\Views\\dashboard\\detail.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('dashboard/detail', [], true)
+ 5 APPPATH\Controllers\Dashboard.php(33): view('dashboard/detail', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->detail('img', 'poster-image.png')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:11:35 --> Undefined variable $data
+in APPPATH\Controllers\Dashboard.php on line 52.
+ 1 APPPATH\Controllers\Dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Controllers\\Dashboard.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->payment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:12:20 --> Undefined variable $data
+in APPPATH\Controllers\Dashboard.php on line 52.
+ 1 APPPATH\Controllers\Dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Controllers\\Dashboard.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->payment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:12:35 --> Undefined variable $data
+in APPPATH\Controllers\Dashboard.php on line 52.
+ 1 APPPATH\Controllers\Dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Controllers\\Dashboard.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->payment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:13:14 --> Undefined variable $data
+in APPPATH\Controllers\Dashboard.php on line 52.
+ 1 APPPATH\Controllers\Dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Controllers\\Dashboard.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->payment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:14:25 --> Undefined variable $data
+in APPPATH\Controllers\Dashboard.php on line 52.
+ 1 APPPATH\Controllers\Dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Controllers\\Dashboard.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->payment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:14:55 --> Undefined variable $data
+in APPPATH\Controllers\Dashboard.php on line 52.
+ 1 APPPATH\Controllers\Dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Controllers\\Dashboard.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->payment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:14:59 --> Undefined variable $data
+in APPPATH\Controllers\Dashboard.php on line 52.
+ 1 APPPATH\Controllers\Dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Controllers\\Dashboard.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->payment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:15:04 --> Undefined variable $data
+in APPPATH\Controllers\Dashboard.php on line 52.
+ 1 APPPATH\Controllers\Dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Controllers\\Dashboard.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->payment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:17:14 --> Undefined variable $data
+in APPPATH\Controllers\Dashboard.php on line 52.
+ 1 APPPATH\Controllers\Dashboard.php(52): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\ci4_quiz2\\app\\Controllers\\Dashboard.php', 52)
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->payment()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:27:18 --> Too few arguments to function App\Controllers\Dashboard::payment(), 0 passed in C:\xampp\htdocs\ci4_quiz2\system\CodeIgniter.php on line 942 and exactly 1 expected
+in APPPATH\Controllers\Dashboard.php on line 50.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->payment()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:27:55 --> view(): Argument #2 ($data) must be of type array, string given, called in C:\xampp\htdocs\ci4_quiz2\app\Controllers\Dashboard.php on line 53
+in SYSTEMPATH\Common.php on line 1178.
+ 1 APPPATH\Controllers\Dashboard.php(53): view('dashboard/payment', '40000')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Dashboard->payment('40000')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:45:19 --> Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Dashboard.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Dashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:45:25 --> Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Dashboard.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Dashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:45:25 --> Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Dashboard.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Dashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:45:27 --> Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Dashboard.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Dashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
+CRITICAL - 2023-11-27 22:45:59 --> Class "App\Controllers\UserModel" not found
+in APPPATH\Controllers\Dashboard.php on line 15.
+ 1 SYSTEMPATH\CodeIgniter.php(914): App\Controllers\Dashboard->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(493): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\ci4_quiz2\\public\\index.php')
