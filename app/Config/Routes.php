@@ -12,18 +12,13 @@ if (is_file(SYSTEMPATH . 'Config/Routes.php')) {
 }
 
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Login');
+$routes->setDefaultController('Admin');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
 
-$routes->get('/', 'Login::index');
-$routes->get('/dashboard', 'Dashboard::index');
-$routes->get('/dashboard/disc', 'Dashboard::disc');
-$routes->get('/dashboard/detail/bayar/payment/(:num)', 'Dashboard::payment/$1');
-$routes->get('/dashboard/detail/(:string)', 'Dashboard::detail/$1');
-$routes->get('/dashboard/detail/bayar/(:num)', 'Dashboard::bayar/$1');
+$routes->get('/', 'Admin::index');
 
 $routes->get('/admin', 'Admin::index');
 $routes->get('/admin/create', 'Admin::create');

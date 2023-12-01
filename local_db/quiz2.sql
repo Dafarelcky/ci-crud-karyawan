@@ -27,53 +27,13 @@ SET time_zone = "+00:00";
 -- Table structure for table `departemen`
 --
 
-CREATE TABLE movies (
+CREATE TABLE Karyawan (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    title VARCHAR(255) NOT NULL,
-    description TEXT,
-    release_date DATE,
-    duration_minutes INT,
-    cover_image VARCHAR(255),
-    harga INT
+    Nama VARCHAR(255) NOT NULL,
+    Umur INT,
+    Divisi VARCHAR(255)
 );
 
-
-CREATE TABLE schedules (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    movie_id INT,
-    schedule_date DATE,
-    start_time TIME
-);
-
-
-CREATE TABLE seats (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    schedule_id INT,
-    seat_number VARCHAR(10),
-    is_booked BOOLEAN DEFAULT FALSE
-);
-
-
-CREATE TABLE `users` (
-  `user_id` varchar(30) NOT NULL,
-  `user_email` varchar(100) NOT NULL,
-  `user_name` varchar(50) NOT NULL,
-  `user_password` varchar(20) NOT NULL,
-  `user_created_at` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
-
-CREATE TABLE transactions (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT,
-    schedule_id INT,
-    seat_id INT,
-    transaction_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    amount DECIMAL(10, 2)
-);
-
-INSERT INTO `users` (`user_id`, `user_email`, `user_name`, `user_password`, `user_created_at`) VALUES
-('D01', 'dafarel', 'dafarel', 'dafarel', '2023-11-27 09:23:22');
 
 
 COMMIT;

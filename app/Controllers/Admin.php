@@ -2,28 +2,23 @@
 
 namespace App\Controllers;
 
-use App\Models\MoviesModel;
-use App\Models\RiwayatModel;
+use App\Models\KaryawanModel;
 
 class Admin extends BaseController
 {
-    protected $movies;
-    protected $riwayat;
-
+    protected $karyawan;
     function __construct()
     {
-        $this->movies = new MoviesModel();
-        $this->riwayat = new RiwayatModel();
+        $this->karyawan = new KaryawanModel();
     }
 
     public function index()
     {
         
-         $data['movies'] = $this->movies->getMovies()->getResult();
-     //   $data['cari'] = $this->request->getGet('cari');
-     //   $data['movies']=$this->movies->getMovies($data['cari'])->getResult();
+        $data['karyawan'] = $this->karyawan->getkaryawan()->getResult();
 
         return view('admin/index', $data);
+       // return view('welcome_message');
     }
 
     public function create()
@@ -34,28 +29,13 @@ class Admin extends BaseController
     public function store()
     {
         $data = array(
-            
-            'title'       => $this->request->getPost('title'),
-            'description'        => $this->request->getPost('description'),
-            'release_date'       => $this->request->getPost('release_date'),
-            'duration_minutes'        => $this->request->getPost('duration_minutes'),
-            'harga'       => $this->request->getPost('harga'),
+            'id'       => $this->request->getPost('id'),
+            'nama'        => $this->request->getPost('nama'),
+            'umur'       => $this->request->getPost('umur'),
+            'divisi'        => $this->request->getPost('divisi'),
         );
-        $this->movies->saveMovies($data);
-        session()->setFlashdata('message', 'Tambah Data Departemen Berhasil '.$this->request->getPost('id')." ".$this->request->getPost('title'));
-    
-        return redirect()->to('/admin/index');
-
-    }   
-
-    public function store_riwayat()
-    {
-        $data = array(
-            
-            'harga'       => $this->request->getPost('harga'),
-        );
-        $this->riwayat->saveMovies($data);
-        session()->setFlashdata('message', 'Tambah Data Departemen Berhasil '.$this->request->getPost('id')." ".$this->request->getPost('title'));
+        $this->karyawan->savekaryawan($data);
+        session()->setFlashdata('message', 'Tambah Data Departemen Berhasil '.$this->request->getPost('id')." ".$this->request->getPost('nama'));
     
         return redirect()->to('/admin/index');
 
@@ -63,11 +43,11 @@ class Admin extends BaseController
     
     function edit($id)
     {
-        $dataMovies = $this->movies->find($id);
-        if (empty($dataMovies)) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Data Movies Tidak ditemukan !');
+        $datakaryawan = $this->karyawan->find($id);
+        if (empty($datakaryawan)) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Data karyawan Tidak ditemukan !');
         }
-        $data['movies'] = $dataMovies;
+        $data['karyawan'] = $datakaryawan;
 
         return view('admin/edit', $data);
     }
@@ -77,10 +57,10 @@ class Admin extends BaseController
         $id = $this->request->getPost('id');
         $data = array(
             'id'        => $this->request->getPost('id'),
-            'title'       => $this->request->getPost('title'),
+            'nama'       => $this->request->getPost('nama'),
         );
-        $this->movies->updateMovies($data, $id);
-        session()->setFlashdata('message', 'Update Data Movies Berhasil '.$this->request->getPost('id')." ".$this->request->getPost('title'));
+        $this->karyawan->updatekaryawan($data, $id);
+        session()->setFlashdata('message', 'Update Data karyawan Berhasil '.$this->request->getPost('id')." ".$this->request->getPost('nama'));
     
         return redirect()->to('/admin/index');
     }
@@ -88,12 +68,12 @@ class Admin extends BaseController
     function delete($id)
     {
         // $kode_departemen = $this->request->getPost('kode_departemen');
-        $dataMovies = $this->movies->find($id);
-        if (empty($dataMovies)) {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Data Movies Tidak ditemukan !');
+        $datakaryawan = $this->karyawan->find($id);
+        if (empty($datakaryawan)) {
+            throw new \CodeIgniter\Exceptions\PageNotFoundException('Data karyawan Tidak ditemukan !');
         }
-        $this->movies->deleteMovies($id);
-        session()->setFlashdata('message', 'Delete Data Movies Berhasil');
+        $this->karyawan->deletekaryawan($id);
+        session()->setFlashdata('message', 'Delete Data karyawan Berhasil');
         return redirect()->to('/admin/index');
     }
     
